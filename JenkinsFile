@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('build') {
+            steps {
+                bat 'echo "test is running"'
+            }
+        }
+        stage('test') {
+            steps {
+                bat 'echo "test is running"'
+            }
+        }
+        stage('deploy') {
+            steps {
+                bat 'echo "Deploying the application"'
+            }
+        }
+    }
+}
